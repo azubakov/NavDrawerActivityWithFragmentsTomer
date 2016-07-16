@@ -81,8 +81,8 @@ public class NavActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.item1) {
-            //getSupportFragmentManager().beginTransaction().replace(R.id.container, new TabsInsideFragment()).commit();
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ColorFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new TabsInsideFragment()).commit();
+            //getSupportFragmentManager().beginTransaction().replace(R.id.container, new ColorFragment()).commit();
         } else if (id == R.id.nav_gallery) {
             getSupportFragmentManager().beginTransaction().replace(R.id.container, new ColorFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
